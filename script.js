@@ -263,11 +263,10 @@ function registro(){
 }
 
 //Login
-const loginEmail = document.getElementById("uemail");
-const loginPassword = document.getElementById("upsw");
-
-function login(loginEmail){
-  debugger
+function login(){
+    var loginEmail = document.getElementById("uemail").value;
+    var loginPassword = document.getElementById("upsw").value;
+    
     var user = users.find(x => x.email = loginEmail)
     console.log(user.email, user.password)
 }
