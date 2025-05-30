@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigotes y Barbas</title>
+    <meta name="description" content="Veterinaria y tienda para mascotas Bigotes y Barbas">
+    
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Header y Navegación -->
+    <header id="inicio">
+        <nav class="navbar">
+            <div class="container1">
+                <div class="containerImg">
+                    <a href="#">
+                        <img src="img/Logo BB2A.png" alt="Logo Bigotes y Barbas" style="max-height: 70px;">
+                    </a>
+                </div>
+                
+                <div class="containerMenu">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#productos">Tienda</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li id="searchBar">
+                            <form class="d-flex" id="search" style="display:inline-table; align-items: center; margin-bottom: 10px;">
+                                <input class="form-control1 me-2" type="search" aria-label="Search" 
+                                    placeholder="Buscar...">
+                                <button type="submit" style="padding: 8px; position:relative; bottom: 1.5px; border:none">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="login-container">
+                    <button style="margin-right: 10px; margin-bottom: 5px;" class="btn-primario" onclick="document.getElementById('id01').style.display='block'">
+                            Registrarse
+                    </button>
+                    <button class="btn-primario" onclick="document.getElementById('id02').style.display='block'">
+                            Ingresar
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrusel de imágenes -->
+    <section style="background-color: rgb(0, 0, 0); padding: 0px; height: 575px; position: relative; margin-top: -26px;">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/banner 1.jpg" style="width:100%;">
+            <div class="content" style="bottom: 50px;">
+                <h1 style="font-size: x-large;">Sabemos que no solo son mascotas, sino familia.</h1>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/banner 2.avif" style="width:100%;">
+            <div class="content" style="bottom: 50px;">
+                <h1 style="font-size: x-large;">La salud de tus mascotas, nuestra prioridad.</h1>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/banner 4.jpg" style="width:100%;">
+            <div class="content" style="bottom: 50px;">
+                <h1 style="font-size: x-large;">Más que estilistas, somos cuidadores con amor.</h1>
+            </div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- The dots/circles -->
+        <div style="text-align:center; position: relative; bottom: 50px; padding: 9px; background: rgba(0, 0, 0, 0.5)">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="about">
+        <h2>Nosotros</h2>
+        <p style="font-weight: 400; text-align: center; justify-content: center;  font-size: larger; padding:40px;">
+            Somos un equipo de veterinarios con experiencia y pasión por la medicina veterinaria, 
+            con el bienestar de tus mascotas. Nuestro objetivo es proporcionar el mejor cuidado veterinario posible, 
+            para que tus compañeros peludos vivan una vida larga, saludable y feliz.
+        </p>
+    </section>
+
+    <!-- Sección Productos -->
+    <section class="productos" id="productos">
+        <div class="container">
+            <h2>Tienda</h2>
+            <div class="productos-grid">
+                <!-- Producto 1 -->
+                <div class="producto-card">
+                    <div class="producto-img">
+                        <img src="img/alimento.png" alt="Alimento para mascotas">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Alimento</h3>
+                        <p style="font-weight: 500;">Alimento seco y humedo en diferentes presentaciones y peso.</p>
+                        <a href="#" style="font-weight: 500; margin-top: 10px;" class="btn-secundario" 
+                           onclick="mostrarProductos('alimento')">Más información</a>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="producto-card">
+                    <div class="producto-img">
+                        <img src="img/peluqueria.207" alt="Servicios de belleza">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Belleza</h3>
+                        <p style="font-weight: 500;">Baño, peluqueria y secado profesional de tu mascota.</p>
+                        <a href="#" style="font-weight: 500; margin-top: 10px;" class="btn-secundario"
+                           onclick="mostrarProductos('belleza')">Más información</a>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="producto-card">
+                    <div class="producto-img">
+                        <img src="img/accesorios.webp" alt="Accesorios para mascotas">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Accesorios</h3>
+                        <p style="font-weight: 500;">Encuentra todo tipo de accesorios para tu mascota.</p>
+                        <a href="#" style="font-weight: 500; margin-top: 10px;" class="btn-secundario"
+                           onclick="mostrarProductos('accesorios')">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <h2 style="color: snow;">Contacto</h2>
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <h3>Información de contacto</h3>
+                    <p style="font-weight: 500;">
+                        <i class="fas fa-map-marker-alt"></i>Av. Libertador N 18 - 37, Bulevar, <br>
+                        Bucaramanga, Santander, Colombia
+                    </p>
+                    <p style="font-weight: 500;"><i class="fas fa-phone"></i> +57 314 356 7681</p>
+                    <p style="font-weight: 500;"><i class="fas fa-envelope"></i> bigotesybarbas@gmail.com</p>
+                    <p style="font-weight: 500;"><i class="fas fa-clock"></i> Lunes a Viernes: 9:00 a.m. - 6:00 p.m.</p>
+                </div>
+                <div class="contacto-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Mensaje" rows="5" required></textarea>
+                        </div>
+                        <button style="font-size: medium;" type="submit" class="btn-primario">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">Bigotes y Barbas</a>
+                    <p style="font-weight: 500;">Veterinaria confiable en el cuidado de tu mascota.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li style="font-weight: 500;"><a href="#inicio">Inicio</a></li>
+                        <li style="font-weight: 500;"><a href="#about">Nosotros</a></li>
+                        <li style="font-weight: 500;"><a href="#productos">Tienda</a></li>
+                        <li style="font-weight: 500;"><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bigotes y Barbas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- The Register Modal -->
+    <div id="id01" class="modal-login">
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+        <!-- Register Modal Content -->
+        <form class="modal-contentLogin animate" style="border-radius: 10px; width:430px; bottom: 46px; float: right; margin-right: 10px;">
+            <div class="containerLogin">
+                <span style="margin-top:-15px" class="close-productos" onclick="cerrarModal()">&times;</span>
+                
+                <label for="uname"><b>Nombre</b></label>
+                <input type="text" placeholder="Nombre" id="reguname" required>
+                
+                <label for="umail"><b>Email</b></label>
+                <input type="email" placeholder="Correo Electrónico" id="reguemail" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Contraseña" id="regupsw" required>
+
+                <input style="margin: 10px 0px;" id="image-file" type="file" id="imagen"/>
+
+                <button id="Login" type="submit" onclick="registro();">Registrarse</button>
+            </div>
+        </form>
+    </div>
+
+        <!-- The Login Modal -->
+    <div id="id02" class="modal-login">
+        <span onclick="document.getElementById('id02').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+        <!-- Login Modal Content -->
+        <form class="modal-contentLogin animate" style="border-radius: 10px; width:430px; bottom: -22px; float: right; margin-right: 10px;">
+            <div class="imgcontainer">
+                <span style="margin-top:-35px" class="close-productos" onclick="cerrarModal()">&times;</span>
+                <img src="img/avatar.avif" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="containerLogin">
+                <label for="uemail"><b>Email</b></label>
+                <input type="email" placeholder="Correo Electrónico" id="uemail" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Contraseña" id="upsw" required>
+
+                <button class="btn-primario" id="Login" type="submit" onclick="login(loginEmail);">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="containerClose" style="background-color:#f1f1f1;">
+                <button id="cancelbtn" style="transition: 0.3s ease; color: white;;" onclick="document.getElementById('id02').style.display='none'">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal de Productos -->
+    <div id="modalProductos" class="modal-productos">
+        <div class="modal-productos-content">
+            <span class="close-productos" onclick="cerrarModal()">&times;</span>
+            <h2>Productos</h2>
+            <div class="productos-lista">
+                <!-- Los productos se cargarán aquí dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrito de Compras -->
+    <div class="carrito-container">
+        <button class="carrito-btn" onclick="document.getElementById('carritoModal').style.display='block'">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="carrito-count" style="display: none;">0</span>
+        </button>
+        
+        <div class="carrito-modal" id="carritoModal">   
+            <span class="close-productos" onclick="cerrarModal()">&times;</span>
+            <h2 style="margin-bottom: 10px;">Compras</h2>
+            <div class="carrito-header">
+                <h3>Tu Carrito</h3>
+                <button class="carrito-vaciar" onclick="vaciarCarrito()">Vaciar</button>
+            </div>
+            <div class="carrito-items">
+                <!-- Los items del carrito se cargarán aquí dinámicamente -->
+            </div>
+            <div class="carrito-total">
+                <p>Total: $<span>0</span></p>
+                <button class="carrito-comprar">Comprar</button>
+            </div>
+            <div class="carrito-container">
+                <button class="carrito-icono" onclick="toggleCarrito()">
+                    <span class="carrito-count">0</span>
+                </button>
+        </div>
+    </div>
+
+    <!-- Notificaciones -->
+    <style>
+        .notificacion {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--secundario);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 1100;
+            font-weight: 100;
+        }
+        
+        .notificacion.mostrar {
+            opacity: 0.9;
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
