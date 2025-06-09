@@ -264,6 +264,7 @@ function registro(){
 
 //Login
 function login(){
+  debugger
     var loginEmail = document.getElementById("uemail").value;
     var loginPassword = document.getElementById("upsw").value;
     

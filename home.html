@@ -227,7 +227,7 @@
         class="close" title="Close Modal">&times;</span>
 
         <!-- Register Modal Content -->
-        <form class="modal-contentLogin animate" style="border-radius: 10px; width:430px; bottom: 46px; float: right; margin-right: 10px;">
+        <form class="modal-contentLogin animate" style="border-radius: 10px;">
             <div class="containerLogin">
                 <span style="margin-top:-15px" class="close-productos" onclick="cerrarModal()">&times;</span>
                 
@@ -253,7 +253,7 @@
         class="close" title="Close Modal">&times;</span>
 
         <!-- Login Modal Content -->
-        <form class="modal-contentLogin animate" style="border-radius: 10px; width:430px; bottom: -22px; float: right; margin-right: 10px;">
+        <form class="modal-contentLogin animate" style="border-radius: 10px;">
             <div class="imgcontainer">
                 <span style="margin-top:-35px" class="close-productos" onclick="cerrarModal()">&times;</span>
                 <img src="img/avatar.avif" alt="Avatar" class="avatar">
@@ -266,13 +266,13 @@
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Contraseña" id="upsw" required>
 
-                <button class="btn-primario" id="Login" type="submit" onclick="login(loginEmail);">Login</button>
+                <button class="btn-primario" id="Login" type="submit" onclick="login();">Login</button>
                 <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label>
             </div>
 
-            <div class="containerClose" style="background-color:#f1f1f1;">
+            <div class="containerClose" style="background-color:#f1f1f1; border-radius: 10px;">
                 <button id="cancelbtn" style="transition: 0.3s ease; color: white;;" onclick="document.getElementById('id02').style.display='none'">Cancel</button>
                 <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
